@@ -101,8 +101,11 @@ def create_spend_chart(categories):
 
 food = Category("Food")
 clothing = Category("Clothing")
-food.deposit(100, "Jollof Rice")
-food.transfer(20, clothing)
+travel = Category("Travel")
+food.deposit(10000, "Budget")
+food.deposit(-500, "Jollof Rice")
+food.transfer(8000, travel)
+food.transfer(1500, clothing)
 # print (food.ledger)
 # print (clothing.ledger)
 # print (food.get_balance())
